@@ -27,6 +27,11 @@ namespace Brambillator.Infrastructure.Tests.Repositories
             productRepository = new EfRepository<Product>(Products);
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=InfrastructureTest;Trusted_Connection=True;");
+        }
+
         public IRepository<Customer> CustomerRepository
         {
             get
