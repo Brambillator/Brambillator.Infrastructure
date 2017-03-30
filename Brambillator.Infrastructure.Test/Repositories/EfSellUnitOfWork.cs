@@ -29,14 +29,14 @@ namespace Brambillator.Infrastructure.Tests.Repositories
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=InfrastructureTest;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\v11.0;Database=InfrastructureTest;Trusted_Connection=True;");
         }
 
         public IRepository<Customer> CustomerRepository
         {
             get
             {
-                throw new NotImplementedException();
+                return customerRepository;
             }
         }
 
@@ -44,7 +44,7 @@ namespace Brambillator.Infrastructure.Tests.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                return employeeRepository;
             }
         }
 
@@ -52,7 +52,7 @@ namespace Brambillator.Infrastructure.Tests.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                return orderRepository;
             }
         }
 
@@ -60,13 +60,13 @@ namespace Brambillator.Infrastructure.Tests.Repositories
         {
             get
             {
-                throw new NotImplementedException();
+                return productRepository;
             }
         }
 
         public void Commit()
         {
-            throw new NotImplementedException();
+            base.SaveChanges();
         }
     }
 }
