@@ -32,6 +32,14 @@ namespace Brambillator.Infrastructure.Tests.Repositories
             optionsBuilder.UseSqlServer(@"Server=(localdb)\v11.0;Database=InfrastructureTest;Trusted_Connection=True;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Customer>().ToTable("Customer");
+            modelBuilder.Entity<Employee>().ToTable("Employee");
+            modelBuilder.Entity<Product>().ToTable("Product");
+            modelBuilder.Entity<Order>().ToTable("Order");
+        }
+
         public IRepository<Customer> CustomerRepository
         {
             get

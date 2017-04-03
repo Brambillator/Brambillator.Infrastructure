@@ -7,9 +7,15 @@ namespace Brambillator.Infrastructure.Tests
 {
     public class DomainTests
     {
-        [Fact]
-        public void DomainTests_TestUnitOfWork()
+        public DomainTests()
         {
+            EfSellUnitOfWorkDbInitializer.Initialize(new EfSellUnitOfWork());
+        }
+
+        [Fact]
+        public void DomainTests_EntityFramework()
+        {
+
             ISellUnitOfWork unitOfWork;
 
             // Simulates an injection of EfSellUnitOfWork for use with entity framework
@@ -38,8 +44,8 @@ namespace Brambillator.Infrastructure.Tests
             
             unitOfWork.Commit();
 
-            //Assert.True(true);
-            Models.Order newSellOrder = new Models.Order() {  };
+            Assert.True(true);
+            //Models.Order newSellOrder = new Models.Order() {  };
         }
     }
 }
