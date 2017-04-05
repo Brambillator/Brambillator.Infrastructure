@@ -1,0 +1,12 @@
+
+\.vs/Brambillator\.Infrastructure/v15/
+
+Brambillator\.Infrastructure/bin/
+
+Brambillator\.Infrastructure/obj/
+
+Brambillator\.Infrastructure\.Test/bin/
+
+Brambillator\.Infrastructure\.Test/obj/
+
+packages/
