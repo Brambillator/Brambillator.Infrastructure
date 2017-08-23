@@ -1,8 +1,5 @@
 ﻿using Brambillator.Infrastructure.Domain.Repositories;
 using Brambillator.Infrastructure.Tests.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Brambillator.Infrastructure.Tests.Repositories
 {

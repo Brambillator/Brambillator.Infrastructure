@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Brambillator.Infrastructure.Domain.Repositories;
+﻿using Brambillator.Infrastructure.Domain.Repositories;
 using Brambillator.Infrastructure.Tests.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -29,7 +26,7 @@ namespace Brambillator.Infrastructure.Tests.Repositories
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\v11.0;Database=InfrastructureTest;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=InfrastructureTest;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

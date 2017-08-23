@@ -10,3 +10,7 @@ Brambillator\.Infrastructure\.Test/bin/
 Brambillator\.Infrastructure\.Test/obj/
 
 packages/
+
+\.vs/Brambillator\.Infrastructure/v14/
+
+*.user

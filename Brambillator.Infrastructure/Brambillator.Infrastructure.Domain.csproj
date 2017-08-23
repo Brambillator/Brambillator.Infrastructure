@@ -1,19 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Brambillator.Infrastructure.Domain</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.3</PackageVersion>
     <Authors>Rodrigo Brambilla</Authors>
     <Description>Basic Domain and repository definitions for Brambillator based projects.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>First release.</PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) Rodrigo Brambilla. All rights reserved.</Copyright>
-    <PackageTags>Framework Domain</PackageTags>    
+    <PackageTags>Framework Domain</PackageTags>
+    <Version>1.0.3</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>    
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
   </ItemGroup>
 
 </Project>

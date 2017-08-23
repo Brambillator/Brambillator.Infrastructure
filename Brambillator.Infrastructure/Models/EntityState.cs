@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Brambillator.Infrastructure.Domain.Models
+﻿namespace Brambillator.Infrastructure.Domain.Models
 {
     public enum EntityState
     {

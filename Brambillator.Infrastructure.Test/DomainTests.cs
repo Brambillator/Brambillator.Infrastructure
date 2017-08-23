@@ -1,5 +1,4 @@
 using Brambillator.Infrastructure.Tests.Repositories;
-using Microsoft.EntityFrameworkCore;
 using System;
 using Xunit;
 
@@ -20,7 +19,8 @@ namespace Brambillator.Infrastructure.Tests
 
             // Simulates an injection of EfSellUnitOfWork for use with entity framework
             unitOfWork = new EfSellUnitOfWork();
-            
+            //unitOfWork = new MemorySellUnitOfWork();
+
             // Create Data
             Models.Product apple = new Models.Product() { Name = "Apple", Registration = DateTime.Now, CurrentValue = 0.5M };
             Models.Product orange = new Models.Product() { Name = "Orange", Registration = DateTime.Now, CurrentValue = 0.4M };

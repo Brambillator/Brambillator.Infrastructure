@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Brambillator.Infrastructure.Tests.Repositories
+﻿namespace Brambillator.Infrastructure.Tests.Repositories
 {
     public static class EfSellUnitOfWorkDbInitializer
     {
